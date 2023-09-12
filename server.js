@@ -15,17 +15,17 @@ baseRouter.get('/greeting', (req, res) => {
 
 baseRouter.post('/add', (req, res) => {
     // const {first, second} = req.body;
-    const first = req.body.first;
-    const second = req.body.second;
-    res.json({ "result": first + second});
+    const n1 = req.body.first;
+    const n2 = req.body.second;
+    res.json({ "result": n1 + n2});
 });
 
 
 baseRouter.post('/subtract', (req, res) => {
     // const {first, second} = req.body;
-    const first = req.body.first;
-    const second = req.body.second;
-    res.json({ "result": first  - second});
+    const n1 = req.body.first;
+    const n2 = req.body.second;
+    res.json({ "result": n1  - n2});
 });
 
 app.use(baseUrl, baseRouter);
