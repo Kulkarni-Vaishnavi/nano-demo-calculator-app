@@ -18,7 +18,6 @@ baseRouter.post('/add', (req, res) => {
     const first = req.body.first;
     const second = req.body.second;
     const ans = first+second;
-    
     res.json({ "result": ans});
 });
 
